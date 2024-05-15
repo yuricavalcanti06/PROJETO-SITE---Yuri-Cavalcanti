@@ -103,6 +103,56 @@ body{
     overflow-x: hidden;
 }
 
+/* Estilos para telas de desktop ou notebook (1920x1080) */
+@media (min-width: 1920px) {
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .video_delivery{
+        width: 1100px;
+    }
+    .horarios{
+        width: 500px;
+    }
+    .imagem-legenda img {
+        width: 500px;
+    }
+    .funcionario img {
+        width: 200px;
+        height: 200px;
+    }
+    .video_conosco {
+        width: 500px;
+    }
+}
+
+/* Estilos para telas de smartphones (375x812) */
+@media (max-width: 500px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video_delivery{
+        width: 100%;
+    }
+    .horarios{
+        width: 100%;
+    }
+    .funcionario img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .video_conosco {
+        width: 100%;
+    }
+    .imagem-legenda img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .inicio{
     font-family: Cabin;
     text-align: center;
